@@ -1,0 +1,542 @@
+Delivered-To: lucassmartcplu@gmail.com
+Received: by 2002:a0c:fd8a:0:0:0:0:0 with SMTP id p10csp1217213qvr;
+        Wed, 22 Apr 2020 16:04:25 -0700 (PDT)
+X-Received: by 2002:a02:cd2c:: with SMTP id h12mr718691jaq.2.1587596425172;
+        Wed, 22 Apr 2020 16:00:25 -0700 (PDT)
+X-Received: by 2002:a02:cd2c:: with SMTP id h12mr718651jaq.2.1587596424504;
+        Wed, 22 Apr 2020 16:00:24 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1587596424; cv=none;
+        d=google.com; s=arc-20160816;
+        b=A+/YiGlYkIUNQmTsVPMRJtlb+SQQxqBlCnd2mPp4bevul1SWQnrVciFOU6STze8RAk
+         Sr/qc8hlokhoeSFl1YceP7Al46gVPZwPzdFZIms2UhPYyb5UI9oiMne2Hd0eWrHQgv+O
+         /ymS63kJ5zL7ycZTTyJzTmz6Dz1nglmS6pUU9vxMiuQCutVkwXQe27tj4g3WH3OlNkB9
+         6jVkvuuGZ4WouyOg/2iwIqCddx5pCTo1vbeo7lx1aG6BTgiom8jq19fJugJvFiMRtWAy
+         VcGduGdhWvwrvV/D7T9oGsxgJtwfcShhdBpJYpRbyz/vj+6ydoJov5HJCkqwyX0YAP92
+         h7rg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=yDA5U2wbry3qNufOOB19IAY4W7r4dLQNTIYLPPAfcpc=;
+        b=qxFipXT3H+x+to/jHsRlMpFFG3S8sT0SsHxKHS/fyuhani6euqPoDvrPqlJR6WWW5u
+         RWVQXYjgZoT173lQn8kiSAQkDjkAqCVWxNWtKaqYpGfbw4p404sZZbmovICUeTOi4vW1
+         4rFKqyUiLb7LTl756HgyHRoEsaW4kxKdBcXs2/bfB4L/vUCLXdwAd43mJkzaYAtXL2BI
+         sz6xh/7joEf9kWmtuMCghHm6jOkE07O1rqwsDWwIIMuuX1iuqt1GpAiA6ACE2JkbDnQP
+         SKRsozIjihXR7oNPL/9+HjRRODVcIJMamfNtGLmR94wMmA/lP+QJ+Q6EcrFBWgLBGxqo
+         NtYA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=BuByD8B9;
+       spf=pass (google.com: domain of mercadolivreconfirmacaomacron@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=mercadolivreconfirmacaomacron@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <mercadolivreconfirmacaomacron@gmail.com>
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com. [209.85.220.65])
+        by mx.google.com with SMTPS id d16sor635645ioe.50.2020.04.22.16.00.24
+        for <lucassmartcplu@gmail.com>
+        (Google Transport Security);
+        Wed, 22 Apr 2020 16:00:24 -0700 (PDT)
+Received-SPF: pass (google.com: domain of mercadolivreconfirmacaomacron@gmail.com designates 209.85.220.65 as permitted sender) client-ip=209.85.220.65;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=BuByD8B9;
+       spf=pass (google.com: domain of mercadolivreconfirmacaomacron@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=mercadolivreconfirmacaomacron@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=yDA5U2wbry3qNufOOB19IAY4W7r4dLQNTIYLPPAfcpc=;
+        b=BuByD8B9U0Hh249AZo3bjYVFgbW2kcxM9JOli437Q1chi0hQvx7HBXoPyBYS3NZQ3b
+         uqKfMns8aWuU9Nu78X1yR3slXB0g+zKNRanHeKXR6rH35FeJ6g7F7fKoDRSlRIPWEW3L
+         0cXxr2B7tg6HlvxhUrG65nEAdnoNsvMPLXTTS4J9Gcm9xec41mEG01AvR+bXC/JZOHBv
+         Ov9hoAe6mkKAI3vWv5106hCTbpQnORyxC/7cibxY2XeptJxeM9vyvc76Wn2A/aSOuBO1
+         1MzNL6QJxTj+QVqb8H6KY9kS2HTwyfQMbS0Jd8kTYgZjQO9TRCzXmA05N7c8vAFhYtfi
+         Wp2g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=yDA5U2wbry3qNufOOB19IAY4W7r4dLQNTIYLPPAfcpc=;
+        b=npXGpl24ZTH+QB2nyxh2gneOZPDnuOJen3IdDdrMnqEZnnIvoxCCK0vdVekt0Uzyw5
+         o6l+wopfHP+/Ppr0aNqMugDlcg1jL7Fl8VLC48jIFDDmDlpTJZ728cgULVA4FGcgVlOX
+         fuRNUFJ6GYzJrAo/xzXrZNijmRflw0voyJFnPo6QinbmOXO5xfC4/7SeDYxL5IgzfpDL
+         yFclT9ehcy12zP+HX3LEhJVShXL8pd35Qi17wbHHJ4NVCK2gBi2dbhwOue7HEZeAyy0F
+         1JPqzHOCYuAif1NK3NhnXjkCZj1gozhGCHlKiF6y6MzTZ0rz64S05B29/Tw5JuTCzuWX
+         IEQQ==
+X-Gm-Message-State: AGi0Pua0c1gzI3A/CKPE3CK7mxAGyAFtS1zIkCW9lsSK29rzULsdd+S3
+	ubf69riW0T2toE/tel//n5VxcUlNLD5zLm5y1jediQ==
+X-Google-Smtp-Source: APiQypKXZK7IDi6I53faYOL5HcxhPbZ9DwhglNP6o0OSMxIxf6sPw0fpGqEk9Wx7U+VZWXCEQ1tJJokkrGO9UfunBz4=
+X-Received: by 2002:a02:ba96:: with SMTP id g22mr687655jao.19.1587596423816;
+ Wed, 22 Apr 2020 16:00:23 -0700 (PDT)
+MIME-Version: 1.0
+From: =?UTF-8?Q?MercadoLivre_Confirma=C3=A7=C3=A3omacroon?= <mercadolivreconfirmacaomacron@gmail.com>
+Date: Wed, 22 Apr 2020 20:00:15 -0300
+Message-ID: <CAMk0uF7-w4xQHtWJQCTVCWPt3fj+vDf+F2rs3OaCjVJkEtGEnA@mail.gmail.com>
+Subject: Mercado Livre
+To: lucassmartcplu@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000e36bef05a3e918a8"
+
+--000000000000e36bef05a3e918a8
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+[image: Ir para o MercadoLivre]
+<http://links.r.mercadolivre.com.br/wf/click?upn=3DD49VhMa8sn6-2F80j0VQXdC-=
+2BV2bglcSjEC3UqPm-2BOfeS609gi604zQYxNl-2BdE5P5HimigtgkOpA1uu1JTof921wnK9Vtf=
+IIgameaYniWAMUAz0N7tr04CvRk9UFfVaEZ1P4MjTIh0jy87IeU16HtNcp0CbBNCp5mp0Xir9iP=
+WfnpJK-2F7Q6jAV-2FWHrC3mCNAyHDL1HQxN1oeL4TGiGSEjqWWwHLmiOLb38b-2FotICiyH0Ux=
+qa8mX6c-2FYR-2BA-2FhOsMkyYbylyK3p-2B0GyhbY2z2wfGmtEhIUEzNCvNnhRPmZmUUi6UGPt=
+wVcQtcfeQjnFvl1rGN8JbNFJHSMSNLH5CuJfAHkrrAuSMV4di7whq4GVNat7QU5dYX6I-2FmBxv=
+qm8QlK9pV_zL-2BAyGJxg7eshUaLsOhLJ8kMWnxRmquCWca5q-2BDdE-2BUct4yf9DlYVoHOvbC=
+t6RxlNt4gZqraim71osoFfr9g2Rt8wZK6418wVLaKZIO6C6NE57cFKI5XaWQLG9Ad1r-2BLbGuJ=
+MgSZf-2Bgd-2Biehs-2FlY3Fhaf6Jm93PP2DSwCwAz3SM4K9JHMNU3ZunjJEcuZPW8ITglplu2c=
+MOiKg36anTXBMW6dbxW6VdfHg4POf7wKdXW2yXJGtV8oC2xmRZSrI4pn4q-2Fd8IZxnILDRDRsJ=
+SsDitR5mG-2FjKXaDrEGtt4oTqOI22h5j00CsUxsWHeo8GoJQBs6EnAnRT-2ByrxwFaAcm2P86L=
+zNP0iLjmc9qEAK-2B-2FPYhThLqPlvbMSv4vWd-2F8US-2FXoIZ7m3O-2FqW64AVEjIwqw5qgwi=
+QQst6a9gdtnxwMT60GPwZdKbHuChvuLifLzhZged9CdoD9hGv3vFAWqWOWW-2Fwe1h1B-2B-2FK=
+ebYPELlVj9ERPyp-2FaLFheu2-2BGQlO11oUn1OPVid-2FTrFVS9sECKqhdy0l8tC6G9ErLrdBM=
+e-2BGWdpRGvr6PIE61sw0I-2BNnzQnTVsB2AO-2FKCNtYfNrmUXWR-2FZ-2FMp2VjiiuFSzNPTB=
+-2Fp6QcrGQxqD3e-2BYzdwqFNF4r2STh4vNZuOK-2FQAz2zRH2vD5o-2FJYDTiyTtUGpWIDfqyy=
+jRQ-3D>
+[image:
+Ir para o MercadoLivre]
+<http://links.r.mercadolivre.com.br/wf/click?upn=3DD49VhMa8sn6-2F80j0VQXdC-=
+2BV2bglcSjEC3UqPm-2BOfeS609gi604zQYxNl-2BdE5P5HimigtgkOpA1uu1JTof921wnK9Vtf=
+IIgameaYniWAMUAz0N7tr04CvRk9UFfVaEZ1P4MjTIh0jy87IeU16HtNcp-2BWQUqUrkIwgpsKa=
+Ec5xGvI-2BrxhS8xHT1LL1k2bDJ3IffKHEY61fDExgj2Iu4rQ-2FrTbWOLWCE09jyFSQDMJLrBO=
+Ng88rIu1MOuStAnw0kTP8B80ZSAfERjr4bc1e1mseHD6ebgP2Lz3IQCdcs7S5SyfamNyGuFpZMD=
+vb34ERO5trVJdefUbi3suy7bREeezrIGq9u1OFA4DK5l6mD4Aa8FS0TRmV6VxgJnHh9guAO9bQb=
+ZE-2FIk9M21I4ofBioIcUtA-3D-3D_zL-2BAyGJxg7eshUaLsOhLJ8kMWnxRmquCWca5q-2BDdE=
+-2BUct4yf9DlYVoHOvbCt6RxlNt4gZqraim71osoFfr9g2Rt8wZK6418wVLaKZIO6C6NE57cFKI=
+5XaWQLG9Ad1r-2BLbGuJMgSZf-2Bgd-2Biehs-2FlY3Fhaf6Jm93PP2DSwCwAz3SM4K9JHMNU3Z=
+unjJEcuZPW8ITglplu2cMOiKg36anTXBMW6dbxW6VdfHg4POf7wKdXW2yXJGtV8oC2xmRZSrI4p=
+n4q-2Fd8IZxnILDRDRsJSsDitR5mG-2FjKXaDrEGtt4oTqOI22h5j00CsUxsWHeo8GoJQBs6EnA=
+nRT-2ByrxwFaAcm2P86LzNP0iLjmc9qEAK-2B-2FPYhThLqPlvbMSv4vWd-2F8US-2FXoIZ7m3O=
+-2FqW64AVEjIwqw5qgwiQQst6a9gdtnxwMT60GPwZdKbHuChvuLifLzhZg4gQSZl48j7nnt-2Ff=
+NriJqZiavqdYly-2FUaBYiH7q7m4-2BzPzyAt84RfXBxBCz0K-2BUwgczSbot6d27SzfRgbaAA9=
+sZDBsy0RU-2FgfK-2B4a-2Be6B-2BEfMYvdxuWhJmyKUB-2FXcji1krnuiG134Rn4aXQzztroX3=
+BIsM9J70lBDM79RviGrUrBxxsq7QVjNGUvw-2FgpK718MdytXfj8rkWCKTYrqj9z1HjeN5iADvn=
+nCgpEwD2U-2BVMU-3D>
+[image: Compre com total tranquilidade]
+ Pagamento Mercado Livre!
+
+Ol=C3=A1, Vendedor(a)
+
+Responda esse e-mail com seus dados banc=C3=A1rios
+
+Ap=C3=B3s o produto da sua venda for entregue ao destinat=C3=A1rio e avalia=
+do pelo
+mesmo, ser=C3=A1 feita a libera=C3=A7=C3=A3o do seu saldo em sua conta banc=
+=C3=A1ria pelo
+MercadoPago.
+
+Envio seguro com garantia do recebimento dos valores.
+[image: MercadoPago]
+<https://e.mercadolivre.com.br/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlYQGgHJY4FE=
+cKctOc6HvL1WSP1pUt6YzaHfzaGCh8YyzgRMzdwzeMhdCzdtFLzdDTo0kzazezbI2jCGkVXtpKX=
+%3DSRBCRTY&_ei_=3DEolaGGF4SNMvxFF7KucKuWN0X-_ORQ2JURG44i816DWbUTfzdoBX3tadh=
+rN1UZK0eG5Yk2O0d_Wi-uBE969D.>
+Lembre-se que voc=C3=AA tem um prazo m=C3=A1ximo de 24HRS para confirmar o =
+envio do
+produto, para que o comprador possa nos informar a respeito.
+
+Seja um bom vendedor e n=C3=A3o deixe de contatar o comprador para mant=C3=
+=AA-lo
+informado sobre o envio do produto, assim o comprador pode avaliar voc=C3=
+=AA
+melhor.
+[image: Mercado Pago]
+
+
+[image: withdraw icon approved]
+
+Ol=C3=A1, responda este e-mail com seus Dados Banc=C3=A1rios, ap=C3=B3s a a=
+valia=C3=A7=C3=A3o do
+Mercado Livre ou do comprador (a) , ser=C3=A1 efetuado o dep=C3=B3sito em
+sua conta banc=C3=A1ria.
+
+Nome:
+
+Data de nascimento:
+
+CPF:
+
+Banco:
+Ag=C3=AAncia:
+
+Conta:
+
+D=C3=ADgito:
+
+
+[image: Information] *Observa=C3=A7=C3=A3o*: Seu saldo s=C3=B3 ser=C3=A1 li=
+berado em sua conta,
+somente quando for qualificado sua venda por nossa empresa ou pelo
+comprador, por motivos de seguran=C3=A7a.
+N=C3=A3o disponibilizaremos etiqueta de envio para voc=C3=AA, pois sua cont=
+a n=C3=A3o tem
+qualifica=C3=A7=C3=A3o, por=C3=A9m reembolsaremos o valor do frete pago pel=
+o cliente, como
+gratifica=C3=A7=C3=A3o pela venda.
+
+*Aten=C3=A7=C3=A3o: *
+
+No momento n=C3=A3o estamos emitindo etiqueta de envio!
+A[image: Sua casa ou escrit=C3=B3rio]kk
+
+
+envie o produto que reembolsamos o valor do frete, ap=C3=B3s a postagem nos
+forne=C3=A7a a foto do comprovante de envio com o c=C3=B3digo de rastreamen=
+to para
+que possamos cadastra em nosso sistema por motivos de seguran=C3=A7a e para
+acompanhar a entrega e valores pago para o reembolso.
+
+Desejamos Sucesso em suas transa=C3=A7=C3=B5es!
+
+Atenciosamente,
+
+Equipe Mercado Livre
+
+--000000000000e36bef05a3e918a8
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" w=
+idth=3D"100%" style=3D"width:auto;table-layout:auto;color:rgb(49,49,49);wor=
+d-spacing:1px;font-size:small;font-family:lato,arial,sans-serif;background-=
+color:rgb(255,230,0);height:55px;max-width:600px;text-align:center"><tbody>=
+<tr><td style=3D"font-family:&#39;arial&#39;,sans-serif;font-size:13px;padd=
+ing:0px 20px;vertical-align:middle"><a href=3D"http://links.r.mercadolivre.=
+com.br/wf/click?upn=3DD49VhMa8sn6-2F80j0VQXdC-2BV2bglcSjEC3UqPm-2BOfeS609gi=
+604zQYxNl-2BdE5P5HimigtgkOpA1uu1JTof921wnK9VtfIIgameaYniWAMUAz0N7tr04CvRk9U=
+FfVaEZ1P4MjTIh0jy87IeU16HtNcp0CbBNCp5mp0Xir9iPWfnpJK-2F7Q6jAV-2FWHrC3mCNAyH=
+DL1HQxN1oeL4TGiGSEjqWWwHLmiOLb38b-2FotICiyH0Uxqa8mX6c-2FYR-2BA-2FhOsMkyYbyl=
+yK3p-2B0GyhbY2z2wfGmtEhIUEzNCvNnhRPmZmUUi6UGPtwVcQtcfeQjnFvl1rGN8JbNFJHSMSN=
+LH5CuJfAHkrrAuSMV4di7whq4GVNat7QU5dYX6I-2FmBxvqm8QlK9pV_zL-2BAyGJxg7eshUaLs=
+OhLJ8kMWnxRmquCWca5q-2BDdE-2BUct4yf9DlYVoHOvbCt6RxlNt4gZqraim71osoFfr9g2Rt8=
+wZK6418wVLaKZIO6C6NE57cFKI5XaWQLG9Ad1r-2BLbGuJMgSZf-2Bgd-2Biehs-2FlY3Fhaf6J=
+m93PP2DSwCwAz3SM4K9JHMNU3ZunjJEcuZPW8ITglplu2cMOiKg36anTXBMW6dbxW6VdfHg4POf=
+7wKdXW2yXJGtV8oC2xmRZSrI4pn4q-2Fd8IZxnILDRDRsJSsDitR5mG-2FjKXaDrEGtt4oTqOI2=
+2h5j00CsUxsWHeo8GoJQBs6EnAnRT-2ByrxwFaAcm2P86LzNP0iLjmc9qEAK-2B-2FPYhThLqPl=
+vbMSv4vWd-2F8US-2FXoIZ7m3O-2FqW64AVEjIwqw5qgwiQQst6a9gdtnxwMT60GPwZdKbHuChv=
+uLifLzhZged9CdoD9hGv3vFAWqWOWW-2Fwe1h1B-2B-2FKebYPELlVj9ERPyp-2FaLFheu2-2BG=
+QlO11oUn1OPVid-2FTrFVS9sECKqhdy0l8tC6G9ErLrdBMe-2BGWdpRGvr6PIE61sw0I-2BNnzQ=
+nTVsB2AO-2FKCNtYfNrmUXWR-2FZ-2FMp2VjiiuFSzNPTB-2Fp6QcrGQxqD3e-2BYzdwqFNF4r2=
+STh4vNZuOK-2FQAz2zRH2vD5o-2FJYDTiyTtUGpWIDfqyyjRQ-3D" style=3D"text-decorat=
+ion-line:none;color:rgb(66,133,244);float:left"><img src=3D"https://http2.m=
+lstatic.com/static/org-img/mkt/email-mkt-assets/davinci/2x/logo-meli-br@2x.=
+png" alt=3D"Ir para o MercadoLivre" width=3D"139" border=3D"0" height=3D"37=
+" style=3D"border:0px;display:block;max-height:100%;width:auto"></a></td><t=
+d valign=3D"top" style=3D"font-family:&#39;arial&#39;,sans-serif;font-size:=
+13px;padding:0px 20px;vertical-align:middle;text-align:right"><a href=3D"ht=
+tp://links.r.mercadolivre.com.br/wf/click?upn=3DD49VhMa8sn6-2F80j0VQXdC-2BV=
+2bglcSjEC3UqPm-2BOfeS609gi604zQYxNl-2BdE5P5HimigtgkOpA1uu1JTof921wnK9VtfIIg=
+ameaYniWAMUAz0N7tr04CvRk9UFfVaEZ1P4MjTIh0jy87IeU16HtNcp-2BWQUqUrkIwgpsKaEc5=
+xGvI-2BrxhS8xHT1LL1k2bDJ3IffKHEY61fDExgj2Iu4rQ-2FrTbWOLWCE09jyFSQDMJLrBONg8=
+8rIu1MOuStAnw0kTP8B80ZSAfERjr4bc1e1mseHD6ebgP2Lz3IQCdcs7S5SyfamNyGuFpZMDvb3=
+4ERO5trVJdefUbi3suy7bREeezrIGq9u1OFA4DK5l6mD4Aa8FS0TRmV6VxgJnHh9guAO9bQbZE-=
+2FIk9M21I4ofBioIcUtA-3D-3D_zL-2BAyGJxg7eshUaLsOhLJ8kMWnxRmquCWca5q-2BDdE-2B=
+Uct4yf9DlYVoHOvbCt6RxlNt4gZqraim71osoFfr9g2Rt8wZK6418wVLaKZIO6C6NE57cFKI5Xa=
+WQLG9Ad1r-2BLbGuJMgSZf-2Bgd-2Biehs-2FlY3Fhaf6Jm93PP2DSwCwAz3SM4K9JHMNU3Zunj=
+JEcuZPW8ITglplu2cMOiKg36anTXBMW6dbxW6VdfHg4POf7wKdXW2yXJGtV8oC2xmRZSrI4pn4q=
+-2Fd8IZxnILDRDRsJSsDitR5mG-2FjKXaDrEGtt4oTqOI22h5j00CsUxsWHeo8GoJQBs6EnAnRT=
+-2ByrxwFaAcm2P86LzNP0iLjmc9qEAK-2B-2FPYhThLqPlvbMSv4vWd-2F8US-2FXoIZ7m3O-2F=
+qW64AVEjIwqw5qgwiQQst6a9gdtnxwMT60GPwZdKbHuChvuLifLzhZg4gQSZl48j7nnt-2FfNri=
+JqZiavqdYly-2FUaBYiH7q7m4-2BzPzyAt84RfXBxBCz0K-2BUwgczSbot6d27SzfRgbaAA9sZD=
+Bsy0RU-2FgfK-2B4a-2Be6B-2BEfMYvdxuWhJmyKUB-2FXcji1krnuiG134Rn4aXQzztroX3BIs=
+M9J70lBDM79RviGrUrBxxsq7QVjNGUvw-2FgpK718MdytXfj8rkWCKTYrqj9z1HjeN5iADvnnCg=
+pEwD2U-2BVMU-3D" style=3D"text-decoration-line:none;color:rgb(66,133,244)">=
+<img src=3D"http://www.mercadolibre.com/org-img/mkt/email-mkt-assets/images=
+/logos/compra_garantida.png" alt=3D"Ir para o MercadoLivre" width=3D"120" s=
+tyle=3D"border:0px;display:block;max-height:100%;width:120px"></a></td></tr=
+></tbody></table><div dir=3D"ltr" style=3D"font-size:12.8px;font-family:san=
+s-serif;color:rgb(49,49,49);word-spacing:1px"><table border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" width=3D"49%" style=3D"width:326px;table-layout:=
+auto;font-family:&#39;arial&#39;,&#39;helvetica&#39;,sans-serif;font-size:1=
+3.696px;display:inline-block;vertical-align:middle;border-width:0px"><tbody=
+><tr style=3D"border-style:inherit;border-width:inherit"><td align=3D"cente=
+r" valign=3D"top" style=3D"font-family:&#39;arial&#39;,sans-serif;font-size=
+:13px;border:inherit;padding-top:5px;padding-bottom:5px;vertical-align:top"=
+><center><img align=3D"middle" alt=3D"Compre com total tranquilidade" borde=
+r=3D"0" src=3D"https://www.mercadolivre.com/org-img/MLB/design/2016/dmac/em=
+ails/10_14_compra_garantida/img-dinheiro.png" style=3D"border:0px;height:au=
+to;max-width:100%;display:block;margin:0px auto"></center></td></tr><tr sty=
+le=3D"border-style:inherit;border-width:inherit"><td valign=3D"top" style=
+=3D"font-family:&#39;arial&#39;,sans-serif;font-size:13px;border:inherit;pa=
+dding:5px 18px;vertical-align:top;text-align:center"><center><span style=3D=
+"color:rgb(3,83,114);font-family:&#39;arial&#39;;font-size:22px">=C2=A0</sp=
+an><span style=3D"color:rgb(3,83,114);font-family:&#39;arial&#39;;font-size=
+:1.375rem">Pagamento Mercado Livre!</span></center><center><span style=3D"c=
+olor:rgb(3,83,114);font-family:&#39;arial&#39;;font-size:22px"><br></span><=
+/center><center><span style=3D"color:rgb(3,83,114);font-family:&#39;arial&#=
+39;;font-size:22px"><br></span></center></td></tr></tbody></table><div dir=
+=3D"auto"><span style=3D"font-family:&#39;arial&#39;,sans-serif;font-size:0=
+.875rem">Ol=C3=A1, Vendedor(a)</span></div><div dir=3D"auto" style=3D"text-=
+align:center"><br></div><table cellpadding=3D"0" cellspacing=3D"0" align=3D=
+"center" style=3D"width:328px;table-layout:fixed;font-family:&#39;averta&#3=
+9;,&#39;lato&#39;,&#39;arial&#39;,&#39;helvetica&#39;,sans-serif;border-col=
+lapse:collapse;border-spacing:0px;max-width:600px"><tbody><tr style=3D"bord=
+er-collapse:collapse"><td align=3D"center" style=3D"padding:0px"><table bgc=
+olor=3D"#ffffff" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"600" style=3D"width:328px;table-layout:auto;border-collapse:collapse;bo=
+rder-spacing:0px;max-width:600px"><tbody><tr style=3D"border-collapse:colla=
+pse"><td align=3D"left" style=3D"padding:0px"><table cellpadding=3D"0" cell=
+spacing=3D"0" width=3D"100%" style=3D"width:328px;table-layout:auto;border-=
+collapse:collapse;border-spacing:0px;max-width:600px"><tbody><tr style=3D"b=
+order-collapse:collapse"><td width=3D"600" align=3D"center" valign=3D"top" =
+style=3D"padding:0px"><table cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" style=3D"width:328px;table-layout:auto;border-collapse:collapse;border=
+-spacing:0px;max-width:600px"><tbody><tr style=3D"border-collapse:collapse"=
+><td align=3D"center" bgcolor=3D"#2d3c46" style=3D"padding:10px"><p style=
+=3D"font-size:0.875rem;margin:0px;font-family:&#39;lato&#39;,&#39;helvetica=
+ neue&#39;,&#39;helvetica&#39;,&#39;arial&#39;,sans-serif;line-height:21px;=
+color:rgb(255,255,255)">Responda esse e-mail com seus dados banc=C3=A1rios<=
+/p></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></=
+table></td></tr></tbody></table><div dir=3D"auto"><span style=3D"font-famil=
+y:&#39;arial&#39;,sans-serif;font-size:14px"><br></span></div><div dir=3D"a=
+uto"><span style=3D"font-family:&#39;arial&#39;,sans-serif;font-size:0.875r=
+em">Ap=C3=B3s o produto da sua venda for entregue ao destinat=C3=A1rio e av=
+aliado pelo mesmo, ser=C3=A1 feita a libera=C3=A7=C3=A3o do seu saldo em su=
+a conta banc=C3=A1ria pelo MercadoPago.</span></div><div dir=3D"auto"><span=
+ style=3D"font-family:&#39;arial&#39;,sans-serif;font-size:14px"><br></span=
+></div><div dir=3D"auto"><span style=3D"font-size:0.8rem;color:rgb(0,0,255)=
+;font-family:&#39;roboto&#39;,&#39;robotodraft&#39;,&#39;helvetica&#39;,&#3=
+9;arial&#39;,sans-serif;background-color:rgb(238,238,238)">Envio seguro com=
+ garantia do recebimento dos valores</span><span style=3D"color:rgb(0,0,255=
+);font-family:&#39;roboto&#39;,&#39;robotodraft&#39;,&#39;helvetica&#39;,&#=
+39;arial&#39;,sans-serif;font-size:0.8rem">.</span><span style=3D"font-fami=
+ly:&#39;arial&#39;,sans-serif;font-size:14px">=C2=A0=C2=A0</span></div><div=
+ dir=3D"auto"><a href=3D"https://e.mercadolivre.com.br/pub/cc?_ri_=3DX0Gzc2=
+X%3DYQpglLjHJlYQGgHJY4FEcKctOc6HvL1WSP1pUt6YzaHfzaGCh8YyzgRMzdwzeMhdCzdtFLz=
+dDTo0kzazezbI2jCGkVXtpKX%3DSRBCRTY&amp;_ei_=3DEolaGGF4SNMvxFF7KucKuWN0X-_OR=
+Q2JURG44i816DWbUTfzdoBX3tadhrN1UZK0eG5Yk2O0d_Wi-uBE969D." style=3D"text-dec=
+oration-line:none;color:rgb(66,133,244);font-family:tahoma,geneva,sans-seri=
+f;font-size:11px"><img src=3D"http://www.mercadopago.com/org-img/mkt/mkt/Im=
+gs/mp/images/encuestaHS/MercadoPago.gif" alt=3D"MercadoPago" width=3D"170" =
+height=3D"68" style=3D"display:inline-block;border:none;outline:none"></a><=
+/div><div dir=3D"auto"><div dir=3D"auto"><div style=3D"width:328px;margin:1=
+6px 0px"><div dir=3D"auto"><div dir=3D"auto"><div style=3D"width:328px;marg=
+in:16px 0px"><div dir=3D"auto"><div dir=3D"auto"><div style=3D"width:328px;=
+margin:16px 0px"><div dir=3D"auto"><div dir=3D"auto"><div style=3D"width:32=
+8px;margin:16px 0px"><div dir=3D"auto"><div dir=3D"auto"><div style=3D"widt=
+h:328px;margin:16px 0px"><div dir=3D"auto"><div dir=3D"auto"><div style=3D"=
+width:328px;margin:16px 0px"><div dir=3D"auto"><div dir=3D"auto"><div style=
+=3D"width:328px;margin:16px 0px"><div dir=3D"auto"><div dir=3D"auto"><div s=
+tyle=3D"width:328px;margin:16px 0px"><div dir=3D"auto"><div dir=3D"auto"><d=
+iv style=3D"width:328px;margin:16px 0px"><div dir=3D"auto"><div dir=3D"auto=
+"><div style=3D"width:328px;margin:16px 0px"><div dir=3D"auto"><div dir=3D"=
+auto"><div style=3D"width:328px;margin:16px 0px"><div dir=3D"auto"><div dir=
+=3D"auto"><div style=3D"width:328px;margin:16px 0px"><div dir=3D"auto"><div=
+ dir=3D"auto"><div style=3D"width:328px;margin:16px 0px"><div dir=3D"auto">=
+<div dir=3D"auto"><div style=3D"width:328px;margin:16px 0px"><div dir=3D"au=
+to"><div dir=3D"auto"><div style=3D"width:328px;margin:16px 0px"><div dir=
+=3D"auto"><div dir=3D"auto"><div style=3D"width:328px;margin:16px 0px"><div=
+ dir=3D"auto"><div dir=3D"auto"><div style=3D"width:328px;margin:16px 0px">=
+<div dir=3D"auto"><div dir=3D"auto"><div style=3D"width:328px;margin:16px 0=
+px"><div dir=3D"auto"><div dir=3D"auto"><div style=3D"width:328px;margin:16=
+px 0px"><div dir=3D"auto"><div dir=3D"auto"><div style=3D"width:328px;margi=
+n:16px 0px"><div dir=3D"auto"><div dir=3D"auto"><div style=3D"width:328px;m=
+argin:16px 0px"><div dir=3D"auto"><div dir=3D"auto"><div style=3D"width:328=
+px;margin:16px 0px"><div dir=3D"auto"><div dir=3D"auto"><div style=3D"width=
+:328px;margin:16px 0px"><div dir=3D"ltr"><div dir=3D"auto" style=3D"font-fa=
+mily:&#39;roboto&#39;,&#39;robotodraft&#39;,&#39;helvetica&#39;,&#39;arial&=
+#39;,sans-serif"><span style=3D"font-family:&#39;arial&#39;,sans-serif;font=
+-size:0.875rem">Lembre-se que voc=C3=AA tem um prazo m=C3=A1ximo de 24HRS p=
+ara confirmar o envio do produto, para que o comprador possa nos informar a=
+ respeito.</span><br></div><div dir=3D"auto" style=3D"font-family:&#39;robo=
+to&#39;,&#39;robotodraft&#39;,&#39;helvetica&#39;,&#39;arial&#39;,sans-seri=
+f"><span style=3D"font-family:&#39;arial&#39;,sans-serif;font-size:14px;lin=
+e-height:16.1px"><br></span></div><div dir=3D"auto" style=3D"font-family:&#=
+39;roboto&#39;,&#39;robotodraft&#39;,&#39;helvetica&#39;,&#39;arial&#39;,sa=
+ns-serif"><span style=3D"font-family:&#39;arial&#39;,sans-serif;font-size:0=
+.875rem;line-height:16.1px">Seja um bom vendedor e n=C3=A3o deixe de contat=
+ar o comprador para mant=C3=AA-lo informado sobre o envio do produto, assim=
+ o comprador pode=C2=A0</span><span style=3D"font-family:&#39;arial&#39;,sa=
+ns-serif;font-size:0.875rem">avaliar voc=C3=AA melhor.</span></div><div dir=
+=3D"auto" style=3D"font-family:&#39;roboto&#39;,&#39;robotodraft&#39;,&#39;=
+helvetica&#39;,&#39;arial&#39;,sans-serif"><span style=3D"font-family:&#39;=
+arial&#39;,sans-serif;font-size:14px;line-height:16.1px"><table cellpadding=
+=3D"0" cellspacing=3D"0" align=3D"center" style=3D"width:328px;table-layout=
+:fixed;font-family:&#39;averta&#39;,&#39;lato&#39;,&#39;arial&#39;,&#39;hel=
+vetica&#39;,sans-serif;font-size:12.8px;border-collapse:collapse;border-spa=
+cing:0px;max-width:600px"><tbody><tr style=3D"border-collapse:collapse"><td=
+ align=3D"center" style=3D"padding:0px"><table bgcolor=3D"#ffffff" align=3D=
+"center" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" style=3D"width:3=
+28px;table-layout:auto;border-collapse:collapse;border-spacing:0px;max-widt=
+h:600px"><tbody><tr style=3D"border-collapse:collapse"><td style=3D"padding=
+:0px"><table cellspacing=3D"0" cellpadding=3D"0" align=3D"center" style=3D"=
+width:328px;table-layout:auto;border-collapse:collapse;border-spacing:0px;m=
+ax-width:600px"><tbody><tr style=3D"border-collapse:collapse"><td align=3D"=
+center" valign=3D"top" style=3D"padding:0px"><table cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0" align=3D"center" style=3D"width:288px;table-layou=
+t:auto;border-collapse:collapse;border-spacing:0px;border:10px solid transp=
+arent;padding:0px 15px;max-width:600px"><tbody><tr style=3D"border-collapse=
+:collapse"></tr></tbody></table></td></tr></tbody></table></td></tr></tbody=
+></table></td></tr></tbody></table></span></div><div dir=3D"auto" style=3D"=
+font-family:&#39;roboto&#39;,&#39;robotodraft&#39;,&#39;helvetica&#39;,&#39=
+;arial&#39;,sans-serif"><span style=3D"font-family:&#39;arial&#39;,sans-ser=
+if;font-size:14px;line-height:16.1px"><table cellpadding=3D"0" cellspacing=
+=3D"0" align=3D"center" style=3D"width:328px;table-layout:fixed;font-family=
+:&#39;averta&#39;,&#39;lato&#39;,&#39;arial&#39;,&#39;helvetica&#39;,sans-s=
+erif;font-size:12.8px;border-collapse:collapse;border-spacing:0px;max-width=
+:600px"><tbody><tr style=3D"border-collapse:collapse"><td align=3D"center" =
+style=3D"padding:0px"><table bgcolor=3D"#ffffff" align=3D"center" cellpaddi=
+ng=3D"0" cellspacing=3D"0" width=3D"600" style=3D"width:328px;table-layout:=
+auto;border-collapse:collapse;border-spacing:0px;max-width:600px"><tbody><t=
+r style=3D"border-collapse:collapse"><td style=3D"padding:0px"><table cells=
+pacing=3D"0" cellpadding=3D"0" align=3D"center" style=3D"width:328px;table-=
+layout:auto;border-collapse:collapse;border-spacing:0px;max-width:600px"><t=
+body><tr style=3D"border-collapse:collapse"><td align=3D"center" valign=3D"=
+top" style=3D"padding:0px"><table cellspacing=3D"0" cellpadding=3D"0" borde=
+r=3D"0" align=3D"center" style=3D"width:288px;table-layout:auto;border-coll=
+apse:collapse;border-spacing:0px;border:10px solid transparent;padding:0px =
+15px;max-width:600px"><tbody><tr style=3D"border-collapse:collapse"></tr></=
+tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr=
+></tbody></table></span></div></div></div></div></div></div></div></div></d=
+iv></div></div></div></div></div></div></div></div></div></div></div></div>=
+</div></div></div></div></div></div></div></div></div></div></div></div></d=
+iv></div></div></div></div></div></div></div></div></div></div></div></div>=
+</div></div></div></div></div></div></div></div></div></div></div></div></d=
+iv></div></div></div></div></div></div></div></div></div></div></div></div>=
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" bgco=
+lor=3D"#ffffff" style=3D"width:auto!important;table-layout:auto!important;m=
+argin:20px auto 28px;max-width:600px;padding:0px;border:1px solid rgb(232,2=
+32,232)"><tbody><tr style=3D"border-style:inherit;border-width:inherit"><td=
+ style=3D"font-family:&#39;arial&#39;,sans-serif;font-size:13px;border:inhe=
+rit"><table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+ style=3D"width:auto!important;table-layout:auto!important"><tbody><tr styl=
+e=3D"border-style:inherit;border-width:inherit"><td align=3D"left" style=3D=
+"border:inherit;padding:12px 24px"><img alt=3D"Mercado Pago" border=3D"0" w=
+idth=3D"120" height=3D"31" src=3D"https://resources.mlstatic.com/components=
+/resources/mp/images/mercadopago-logo-120x31.png" style=3D"border:none;padd=
+ing:1px;margin:1px;outline:none"></td></tr><tr style=3D"border-style:inheri=
+t;border-width:inherit"><td width=3D"100%" height=3D"1" style=3D"font-size:=
+1px;border:inherit;display:block"><br></td></tr><tr style=3D"border-style:i=
+nherit;border-width:inherit"><td height=3D"48" style=3D"font-size:1px;borde=
+r:inherit"><br></td></tr></tbody></table><table width=3D"100%" cellspacing=
+=3D"0" cellpadding=3D"0" border=3D"0" style=3D"width:auto!important;table-l=
+ayout:auto!important;padding:0px 20px 0px 0px;text-align:center"><tbody><tr=
+ style=3D"border-style:inherit;border-width:inherit"><td style=3D"border:in=
+herit"><img alt=3D"withdraw icon approved" border=3D"0" width=3D"76" height=
+=3D"59" src=3D"https://www.mercadopago.com/org-img/emails/mp/assets/withdra=
+w-icon-approved.png" style=3D"border:0px"></td></tr><tr style=3D"border-sty=
+le:inherit;border-width:inherit"><td height=3D"40" style=3D"font-size:1px;b=
+order:inherit"><br></td></tr></tbody></table><table width=3D"100%" cellspac=
+ing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"width:auto!important;tabl=
+e-layout:auto!important;padding:0px 20px;text-align:center;margin:0px auto;=
+max-width:400px"><tbody><tr style=3D"border-style:inherit;border-width:inhe=
+rit"><td style=3D"border:inherit"><span style=3D"font-family:&#39;arial&#39=
+;;font-size:16px;color:rgb(51,51,51);line-height:28px"><span style=3D"font-=
+size:1rem">Ol=C3=A1, responda este e-mail com seus Dados=C2=A0Banc=C3=A1rio=
+s, ap=C3=B3s a avalia=C3=A7=C3=A3o do Mercado Livre ou do comprador (a)=C2=
+=A0</span><span style=3D"font-size:1rem">, ser=C3=A1 efetuado o dep=C3=B3si=
+to em sua=C2=A0conta=C2=A0banc=C3=A1ria.</span></span></td></tr></tbody></t=
+able><table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"paddi=
+ng:16px;background-color:rgb(250,250,250);margin:40px auto 0px;border:1px s=
+olid rgb(221,221,221);border-radius:4px;max-width:400px"><tbody><tr valign=
+=3D"middle" style=3D"border-style:inherit;border-width:inherit"><td style=
+=3D"border:inherit;text-align:right;padding:10px 8px 10px 0px"><div style=
+=3D"font-family:&#39;arial&#39;;color:rgb(153,153,153);font-size:0.875rem;t=
+ext-align:left">Nome:</div><div style=3D"text-align:left"><br></div><div st=
+yle=3D"text-align:left;font-size:0.875rem"><span style=3D"color:rgb(153,153=
+,153);font-family:&#39;arial&#39;;font-size:0.875rem">Data de nascimento:</=
+span></div><div style=3D"text-align:left"><br></div><div style=3D"text-alig=
+n:left;font-size:0.875rem"><span style=3D"color:rgb(153,153,153);font-famil=
+y:&#39;arial&#39;;font-size:0.875rem">CPF:</span></div></td><td style=3D"fo=
+nt-family:&#39;arial&#39;;font-size:14px;border:inherit;color:rgb(51,51,51)=
+;padding:10px 0px 10px 8px"><br></td></tr><tr valign=3D"middle" style=3D"bo=
+rder-style:inherit;border-width:inherit"><td style=3D"font-family:&#39;aria=
+l&#39;;font-size:0.875rem;border:inherit;color:rgb(153,153,153);padding:10p=
+x 8px 10px 0px">Banco:</td><td style=3D"font-family:&#39;arial&#39;;font-si=
+ze:14px;border:inherit;color:rgb(51,51,51);padding:10px 0px 10px 8px"><br><=
+/td></tr><tr valign=3D"middle" style=3D"border-style:inherit;border-width:i=
+nherit"><td style=3D"border:inherit;text-align:right;padding:10px 8px 10px =
+0px"><div style=3D"font-family:&#39;arial&#39;;color:rgb(153,153,153);font-=
+size:0.875rem;text-align:left">Ag=C3=AAncia:</div><div style=3D"text-align:=
+left"><br></div><div style=3D"text-align:left;font-size:0.875rem"><span sty=
+le=3D"color:rgb(153,153,153);font-family:&#39;arial&#39;;font-size:0.875rem=
+">Conta:</span></div><div style=3D"text-align:left"><br></div><div style=3D=
+"text-align:left;font-size:0.875rem"><span style=3D"color:rgb(153,153,153);=
+font-family:&#39;arial&#39;;font-size:0.875rem">D=C3=ADgito:</span></div><d=
+iv style=3D"text-align:left;font-size:0.875rem"><br></div></td><td style=3D=
+"font-family:&#39;arial&#39;;font-size:14px;border:inherit;color:rgb(51,51,=
+51);padding:10px 0px 10px 8px"><br></td></tr></tbody></table><table width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"width:a=
+uto!important;table-layout:auto!important;margin:20px auto;max-width:330px"=
+><tbody><tr style=3D"border-style:inherit;border-width:inherit"><td style=
+=3D"border:inherit;vertical-align:top"><img alt=3D"Information" border=3D"0=
+" width=3D"20" height=3D"20" src=3D"https://www.mercadopago.com/org-img/ema=
+ils/mp/assets/icon-information.png" style=3D"border:0px"></td><td style=3D"=
+border:inherit"><span style=3D"font-family:&#39;arial&#39;;font-size:0.875r=
+em;line-height:22px;color:rgb(153,153,153)"><b style=3D"font-size:0.875rem"=
+>Observa=C3=A7=C3=A3o</b>: Seu saldo s=C3=B3 ser=C3=A1 liberado em sua=C2=
+=A0conta, somente quando for qualificado sua venda por nossa empresa ou pel=
+o comprador, por motivos de seguran=C3=A7a.<br>N=C3=A3o disponibilizaremos =
+etiqueta de envio para voc=C3=AA, pois sua=C2=A0conta=C2=A0n=C3=A3o tem qua=
+lifica=C3=A7=C3=A3o, por=C3=A9m reembolsaremos o valor do frete pago pelo c=
+liente, como gratifica=C3=A7=C3=A3o pela venda.</span></td></tr></tbody></t=
+able></td></tr></tbody></table><div></div><div><div dir=3D"auto"><div dir=
+=3D"auto"><div style=3D"width:328px;margin:16px 0px"><div dir=3D"auto"><div=
+ dir=3D"auto"><div style=3D"width:328px;margin:16px 0px"><div dir=3D"auto">=
+<div dir=3D"auto"><div style=3D"width:328px;margin:16px 0px"><div dir=3D"au=
+to"><div dir=3D"auto"><div style=3D"width:328px;margin:16px 0px"><div dir=
+=3D"auto"><div dir=3D"auto"><div style=3D"width:328px;margin:16px 0px"><div=
+ dir=3D"auto"><div dir=3D"auto"><div style=3D"width:328px;margin:16px 0px">=
+<div dir=3D"auto"><div dir=3D"auto"><div style=3D"width:328px;margin:16px 0=
+px"><div dir=3D"auto"><div dir=3D"auto"><div style=3D"width:328px;margin:16=
+px 0px"><div dir=3D"auto"><div dir=3D"auto"><div style=3D"width:328px;margi=
+n:16px 0px"><div dir=3D"auto"><div dir=3D"auto"><div style=3D"width:328px;m=
+argin:16px 0px"><div dir=3D"auto"><div dir=3D"auto"><div style=3D"width:328=
+px;margin:16px 0px"><div dir=3D"auto"><div dir=3D"auto"><div style=3D"width=
+:328px;margin:16px 0px"><div dir=3D"auto"><div dir=3D"auto"><div style=3D"w=
+idth:328px;margin:16px 0px"><div dir=3D"auto"><div dir=3D"auto"><div style=
+=3D"width:328px;margin:16px 0px"><div dir=3D"auto"><div dir=3D"auto"><div s=
+tyle=3D"width:328px;margin:16px 0px"><div dir=3D"auto"><div dir=3D"auto"><d=
+iv style=3D"width:328px;margin:16px 0px"><div dir=3D"auto"><div dir=3D"auto=
+"><div style=3D"width:328px;margin:16px 0px"><div dir=3D"auto"><div dir=3D"=
+auto"><div style=3D"width:328px;margin:16px 0px"><div dir=3D"auto"><div dir=
+=3D"auto"><div style=3D"width:328px;margin:16px 0px"><div dir=3D"auto"><div=
+ dir=3D"auto"><div style=3D"width:328px;margin:16px 0px"><div dir=3D"auto">=
+<div dir=3D"auto"><div style=3D"width:328px;margin:16px 0px"><div dir=3D"au=
+to"><div dir=3D"auto"><div style=3D"width:328px;margin:16px 0px"><div dir=
+=3D"auto"><div dir=3D"auto"><div style=3D"width:328px;margin:16px 0px"><div=
+ dir=3D"ltr"><div style=3D"font-family:&#39;roboto&#39;,&#39;robotodraft&#3=
+9;,&#39;helvetica&#39;,&#39;arial&#39;,sans-serif"><table border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0" width=3D"100%" style=3D"width:1067px;table-=
+layout:auto"><tbody><tr><td style=3D"font-family:&#39;arial&#39;,sans-serif=
+;font-size:13px;padding:0cm 15pt 18.75pt 0cm"><table border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0" width=3D"100%" style=3D"width:1067px;table-layou=
+t:auto;font-size:12.8px"><tbody><tr><td style=3D"padding:0cm 15pt 18.75pt 0=
+cm"><p style=3D"background-color:rgb(245,245,245);margin-bottom:0.0001pt"><=
+b style=3D"font-size:13px"><i><u><span style=3D"font-size:16px"><font color=
+=3D"#f44336" style=3D"font-size:1rem">Aten=C3=A7=C3=A3o:=C2=A0</font></span=
+></u></i></b></p><p style=3D"background-color:rgb(245,245,245);margin-botto=
+m:0.0001pt"><span style=3D"font-size:0.875rem">No momento n=C3=A3o estamos =
+emitindo etiqueta de envio!</span></p><table border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0" width=3D"100%" align=3D"center" style=3D"width:auto;tabl=
+e-layout:auto;font-family:sans-serif;font-size:0px;background-color:rgb(245=
+,245,245);border-collapse:collapse;border-spacing:0px"><tbody><tr><td align=
+=3D"center" style=3D"padding-bottom:20px;border-collapse:collapse;font-size=
+:0rem">A<img alt=3D"Sua casa ou escrit=C3=B3rio" border=3D"0" src=3D"https:=
+//http2.mlstatic.com/static/org-img/mkt/email-mkt-assets/davinci/2x/circulo=
+-amarillo-camion@2x.png" height=3D"50px" width=3D"50px">kk</td></tr><tr><td=
+ align=3D"center" style=3D"font-family:&#39;proxima nova&#39;,&#39;_apple_s=
+ystem&#39;,&#39;helvetica neue&#39;,&#39;helvetica&#39;,&#39;roboto&#39;,&#=
+39;arial&#39;,sans-serif;padding-bottom:10px;font-size:18px;line-height:1.2=
+1;border-collapse:collapse"><p style=3D"font-size:12.8px;font-family:&#39;a=
+rial&#39;,sans-serif;margin-bottom:0.0001pt"><br></p></td></tr></tbody></ta=
+ble><p style=3D"background-color:rgb(245,245,245);margin-bottom:0.0001pt"><=
+span style=3D"font-size:0.875rem">envie o produto que reembolsamos o valor =
+do frete, ap=C3=B3s a postagem nos forne=C3=A7a a foto do comprovante de en=
+vio com o c=C3=B3digo de rastreamento para que possamos cadastra em nosso s=
+istema por motivos de seguran=C3=A7a e para acompanhar a entrega e valores =
+pago para o=C2=A0reembolso.</span></p><p style=3D"background-color:rgb(245,=
+245,245);margin-bottom:0.0001pt"><span style=3D"font-size:0.875rem">Desejam=
+os Sucesso em suas transa=C3=A7=C3=B5es!</span></p></td></tr></tbody></tabl=
+e></td></tr></tbody></table></div></div></div></div></div></div></div></div=
+></div></div></div></div></div></div></div></div></div></div></div></div></=
+div></div></div></div></div></div></div></div></div></div></div></div></div=
+></div></div></div></div></div></div></div></div></div></div></div></div></=
+div></div></div></div></div></div></div></div></div></div></div></div></div=
+></div></div></div></div></div></div></div></div></div></div></div></div></=
+div><p style=3D"font-family:&#39;arial&#39;,sans-serif;font-size:13px;margi=
+n-bottom:0.0001pt"><span style=3D"font-size:1rem">Atenciosamente,</span></p=
+><p style=3D"font-family:&#39;arial&#39;,sans-serif;font-size:13px;margin-b=
+ottom:0.0001pt"><span style=3D"font-size:1rem">Equipe Mercado Livre</span><=
+/p></div></div></div>
+
+--000000000000e36bef05a3e918a8--

@@ -1,0 +1,44 @@
+body{
+    /*A cor sempre estrá aplicada, não importa se a 
+    imagem vai carregar ou não, a ordem de precedecia primerio é a imagem*/
+    background:#21232a url('img/img_fundo.jpg') repeat 0 0; 
+    font: 16px "Roboto", sans-serif !important; /*  font: 16px Arial, Helvetica, sans-serif;*/
+  
+   
+}
+#principal {
+    width: 900px;
+    padding: 0.9375em;
+    margin: auto;
+  
+
+}
+#menu{
+    background: #41414e;
+    padding: 1.125em;/*18px*/
+}
+#conteudo{
+    background: #e8e8d9;
+    padding: 0.625em;/*10px*/
+
+    text-indent: 0.9375em; /*15px*/
+
+}
+.centralizar{
+    text-align: center;
+    color: white;
+    
+}
+.img-format{
+    border: 0.625em solid  #41414e;
+    display: block;
+    margin: auto;
+}
+
+a{  
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    text-decoration: none;
+    position: 0.3125;/*5px*/
+
+}
